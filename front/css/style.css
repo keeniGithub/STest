@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lato&display=swap');
+
+body{
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(90deg, rgba(201,255,239,1) 0%, rgba(145,235,255,1) 100%);
+}
+
+nav{
+    box-shadow: 0px 15px 27px 0px rgba(34, 60, 80, 0.1);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main{
+    margin-top: 10%;
+}
+
+main h1{
+    font-size: 40px;
+}
+
+main a{
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    border: 10px solid rgb(93,255,208);
+    border-radius: 50%;
+    text-align: center;
+    margin: 30px;
+    color: black;
+    font-size: 50px;
+    transition: 1s;
+}
+
+main a img{
+    width: 100px;
+    height: 200px;
+}
+
+main a:hover{
+    border-color: rgb(0, 255, 234);
+    background: rgba(255, 255, 255, 0.3);
+    width: 220px;
+    height: 220px;
+}
+
+main a:active{
+    filter: brightness(90%);
+    transition: 0.5s;
+}
+
+footer h1{
+    font-size: 30px;
+}
+
+.loader {
+    display: none;
+    margin: 15px;
+    width: 60px;
+    aspect-ratio: 4;
+    --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+    background: 
+      var(--_g) 0%   50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: calc(100%/3) 100%;
+    animation: l7 1s infinite linear;
+  }
+  @keyframes l7 {
+      33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
+      50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
+      66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
+}
+
+@keyframes success {
+    0%{
+        font-size: 30px;
+    }
+
+    50%{
+        font-size: 35px;
+    }
+
+    100%{
+        font-size: 30px;
+    }
+}

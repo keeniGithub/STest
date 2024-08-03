@@ -1,0 +1,4 @@
+Eel
+pythonping
+speedtest-cli
+requests

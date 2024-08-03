@@ -23,4 +23,4 @@ def get_ping():
     return round(ping("voicy.site"), 1)
 
 eel.init('front')
-eel.start('index.html', size=(450, 700))
+eel.start('index.html', size=(500, 750))

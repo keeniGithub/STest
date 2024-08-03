@@ -1,10 +1,11 @@
 window.onresize = function () {
-    window.resizeTo(450, 700);
+    window.resizeTo(500, 750);
 }
 
 let go_btn = document.querySelector(".go a")
 let go_btn_img = document.querySelector(".go a img")
 let loader = document.querySelector(".loader")
+let clock = document.querySelector(".clock")
 let state = false
 
 async function user_info() {
@@ -63,5 +64,10 @@ go_btn.addEventListener("click", async function() {
         speedtest()
     }
 })
+
+setInterval(function() {
+    let currentDate = new Date();
+    clock.innerHTML = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds()
+}, 1000);
 
 user_info()
